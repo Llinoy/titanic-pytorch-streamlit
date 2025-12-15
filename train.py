@@ -133,7 +133,7 @@ def evaluate(model, loader, device):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--project_dir", type=str, default=str(Path(__file__).resolve().parent))
-    parser.add_argument("--kaggle_json", type=str, default="/content/drive/MyDrive/kaggle (1).json")
+    parser.add_argument("--kaggle_json", type=str, default="./kaggle.json")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--val_size", type=float, default=0.2)
     parser.add_argument("--batch_size", type=int, default=64)
